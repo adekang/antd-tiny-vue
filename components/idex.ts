@@ -1,2 +1,9 @@
 // 全局导出
-export {};
+export {}
+
+/* test */
+const aaa = () => {
+  // TODO
+}
+
+export default aaa
