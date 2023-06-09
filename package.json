@@ -8,7 +8,10 @@
   "license": "ISC",
   "scripts": {
     "test": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "vitepress dev site",
+    "build:site": "vitepress build site",
+    "preview": "vitepress preview site"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
@@ -20,11 +23,16 @@
     "@mistjs/tsconfig": "^1.1.1",
     "@mistjs/tsconfig-vue": "^1.1.2",
     "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.9",
+    "vitepress": "1.0.0-beta.1",
     "vitest": "^0.32.0"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
   }
 }
