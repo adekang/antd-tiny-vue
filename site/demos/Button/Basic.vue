@@ -7,11 +7,13 @@ Hello World This is Test Docs block code in `button.vue`.
 
 </docs>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from '../../../components/Button'
+</script>
 
 <template>
   <div>
-    <button>基础按钮</button>
+    <Button>基础按钮</Button>
   </div>
 </template>
 

@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@antd-tiny-vue/cssinjs':
+    specifier: ^0.0.10
+    version: 0.0.10(vue@3.3.4)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -195,6 +198,18 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@antd-tiny-vue/cssinjs@0.0.10(vue@3.3.4):
+    resolution: {integrity: sha512-Htd2SbbXJpbx7Z6wqXtPCyblZyZFzSM59NuYsV4mZuJti+NzidAlhB+zJl2N5qxHaScKSRFfTf8WugMNYNd7OA==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@emotion/hash': 0.9.1
+      '@emotion/unitless': 0.8.1
+      csstype: 3.1.2
+      stylis: 4.2.0
+      vue: 3.3.4
+    dev: false
 
   /@babel/code-frame@7.22.5:
     resolution: {integrity: sha512-Xmwn266vad+6DAqEB2A6V/CcZVp62BbwVmcOJc2RPuwih1kw02TjQvWVWlcKGbBPd+8/0V5DEkOcizRGYsspYQ==}
@@ -703,6 +718,14 @@ packages:
       - '@algolia/client-search'
       - search-insights
     dev: true
+
+  /@emotion/hash@0.9.1:
+    resolution: {integrity: sha512-gJB6HLm5rYwSLI6PQa+X1t5CFGrv1J1TWG+sOyMCeKz2ojaj6Fnl/rZEspogG+cvqbt4AE/2eIyD2QfLKTBNlQ==}
+    dev: false
+
+  /@emotion/unitless@0.8.1:
+    resolution: {integrity: sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==}
+    dev: false
 
   /@esbuild/android-arm64@0.17.19:
     resolution: {integrity: sha512-KBMWvEZooR7+kzY0BtbTQn0OAYY7CsiydT63pVEaPtVYF0hXbUaOyZog37DKxK7NF3XacBJOpYT4adIJh+avxA==}
@@ -4510,6 +4533,10 @@ packages:
     dependencies:
       acorn: 8.8.2
     dev: true
+
+  /stylis@4.2.0:
+    resolution: {integrity: sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw==}
+    dev: false
 
   /supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}

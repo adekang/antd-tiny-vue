@@ -34,6 +34,7 @@
     "vitest": "^0.32.0"
   },
   "dependencies": {
+    "@antd-tiny-vue/cssinjs": "^0.0.10",
     "vue": "^3.3.4"
   }
 }
