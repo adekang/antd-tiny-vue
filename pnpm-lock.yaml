@@ -5,8 +5,8 @@ dependencies:
     specifier: ^7.0.0
     version: 7.0.0
   '@antd-tiny-vue/cssinjs':
-    specifier: ^0.0.10
-    version: 0.0.10(vue@3.3.4)
+    specifier: 0.0.8
+    version: 0.0.8(vue@3.3.4)
   '@ctrl/tinycolor':
     specifier: ^3.6.0
     version: 3.6.0
@@ -217,8 +217,8 @@ packages:
       '@ctrl/tinycolor': 3.6.0
     dev: false
 
-  /@antd-tiny-vue/cssinjs@0.0.10(vue@3.3.4):
-    resolution: {integrity: sha512-Htd2SbbXJpbx7Z6wqXtPCyblZyZFzSM59NuYsV4mZuJti+NzidAlhB+zJl2N5qxHaScKSRFfTf8WugMNYNd7OA==}
+  /@antd-tiny-vue/cssinjs@0.0.8(vue@3.3.4):
+    resolution: {integrity: sha512-Q5/4ugRfaIn0jfG/D5eXu2DtGfmMbsNAvAcx6M0aRjY3gfvd4h/W7YDIfI4N9lfighnvJ8A4CgW6d9xAHlP5pw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:

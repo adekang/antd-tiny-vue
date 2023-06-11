@@ -19,7 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "@mistjs/eslint-config-vue-jsx": "^ 0.0.7",
+    "@mistjs/eslint-config-vue-jsx": "^0.0.7",
     "@mistjs/tsconfig": "^1.1.1",
     "@mistjs/tsconfig-vue": "^1.1.2",
     "@types/node": "^20.2.5",
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@ant-design/colors": "^7.0.0",
-    "@antd-tiny-vue/cssinjs": "^0.0.10",
+    "@antd-tiny-vue/cssinjs": "0.0.8",
     "@ctrl/tinycolor": "^3.6.0",
     "@v-c/utils": "^0.0.24",
     "@vueuse/core": "^10.1.2",
