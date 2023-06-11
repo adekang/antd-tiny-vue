@@ -1,9 +1,17 @@
 {
   "name": "antd-tiny-vue",
   "version": "1.0.0",
-  "description": "",
+  "packageManager": "pnpm@8.4.0",
+  "description": "this is a tiny antd components for vue3",
+  "keywords": [
+    "antd",
+    "ant-design-vue",
+    "ant-design",
+    "vue3",
+    "vue3-components",
+    "components"
+  ],
   "main": "index.js",
-  "keywords": [],
   "author": "adekang",
   "license": "ISC",
   "scripts": {
