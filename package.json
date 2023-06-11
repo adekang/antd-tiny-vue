@@ -17,36 +17,54 @@
   "scripts": {
     "test": "vitest",
     "prepare": "husky install",
-    "dev": "vitepress dev site",
-    "build:site": "vitepress build site",
-    "preview": "vitepress preview site"
+    "dev": "vitepress dev",
+    "build:site": "vitepress build",
+    "build:lib": "vite build --config vite.build.config.ts",
+    "build:umd": "vite build --config vite.bundle.config.ts",
+    "copy:css": "cpx \"components/style/*.css\" dist",
+    "preview": "vitepress preview"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": "eslint --fix"
   },
+  "dependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@ant-design/icons-vue": "^6.1.0",
+    "@antd-tiny-vue/cssinjs": "0.0.8",
+    "@ctrl/tinycolor": "^3.6.0",
+    "@v-c/utils": "^0.0.22",
+    "@vueuse/core": "^9.13.0",
+    "vue": "^3.3.0-beta.2"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
-    "@commitlint/config-conventional": "^17.6.5",
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
     "@mistjs/eslint-config-vue-jsx": "^0.0.7",
     "@mistjs/tsconfig": "^1.1.1",
     "@mistjs/tsconfig-vue": "^1.1.2",
-    "@types/node": "^20.2.5",
+    "@types/node": "^18.15.10",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "eslint": "^8.41.0",
+    "cpx": "^1.5.0",
+    "eslint": "^8.36.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
     "typescript": "^5.0.4",
-    "vite": "^4.3.9",
-    "vite-plugin-vitepress-demo": "2.0.0-beta.26",
-    "vitepress": "1.0.0-beta.1",
-    "vitest": "^0.32.0"
+    "unbuild": "^1.1.2",
+    "vite": "^4.3.3",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-vitepress-demo": "2.0.0-beta.29",
+    "vitepress": "1.0.0-alpha.74",
+    "vitest": "^0.28.5"
   },
-  "dependencies": {
-    "@ant-design/colors": "^7.0.0",
-    "@antd-tiny-vue/cssinjs": "0.0.8",
-    "@ctrl/tinycolor": "^3.6.0",
-    "@v-c/utils": "^0.0.24",
-    "@vueuse/core": "^10.1.2",
-    "vue": "^3.3.4"
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    },
+    "overrides": {
+      "vue": "3.3.0-beta.2"
+    }
   }
 }

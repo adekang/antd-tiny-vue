@@ -3,7 +3,7 @@
 // import type { ComponentToken as AvatarComponentToken } from '../../avatar/style'
 // import type { ComponentToken as BackTopComponentToken } from '../../back-top/style'
 import type { ComponentToken as ButtonComponentToken } from '../../button/style'
-// import type { ComponentToken as FloatButtonComponentToken } from '../../float-button/style'
+// import type { ComponentToken as FloatButtonComponentToken } from '../../floats-button/style'
 // import type { ComponentToken as CalendarComponentToken } from '../../calendar/style'
 // import type { ComponentToken as CardComponentToken } from '../../card/style'
 // import type { ComponentToken as CarouselComponentToken } from '../../carousel/style'
@@ -34,7 +34,7 @@ import type { ComponentToken as ButtonComponentToken } from '../../button/style'
 // import type { ComponentToken as SelectComponentToken } from '../../select/style'
 // import type { ComponentToken as SkeletonComponentToken } from '../../skeleton/style'
 // import type { ComponentToken as SliderComponentToken } from '../../slider/style'
-// import type { ComponentToken as SpaceComponentToken } from '../../space/style'
+import type { ComponentToken as SpaceComponentToken } from '../../space/style'
 // import type { ComponentToken as SpinComponentToken } from '../../spin/style'
 // import type { ComponentToken as StepsComponentToken } from '../../steps/style'
 // import type { ComponentToken as TableComponentToken } from '../../table/style'
@@ -108,7 +108,7 @@ export interface ComponentTokenMap {
   // Upload?: UploadComponentToken
   // Tooltip?: TooltipComponentToken
   // Table?: TableComponentToken
-  // Space?: SpaceComponentToken
+  Space?: SpaceComponentToken
   // Progress?: ProgressComponentToken
   // Tour?: TourComponentToken
   // QRCode?: QRCodeComponentToken

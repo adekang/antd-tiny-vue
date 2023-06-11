@@ -1,6 +1,7 @@
 {
   "extends": "@mistjs/tsconfig-vue",
   "compilerOptions": {
-    "moduleResolution": "node",
+    "module": "es2022",
+    "moduleResolution": "bundler",
   }
 }

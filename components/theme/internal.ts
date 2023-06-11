@@ -4,9 +4,9 @@ import {
   useCacheToken,
   useStyleRegister
 } from '@antd-tiny-vue/cssinjs'
-import { createInjectionState } from '@v-c/utils'
+import { createInjectionState, objectType, someType } from '@v-c/utils'
 import type { ComputedRef, VNodeChild } from 'vue'
-import { computed } from 'vue'
+import { computed, defineComponent } from 'vue'
 import version from '../version'
 import type {
   AliasToken,
@@ -71,6 +71,21 @@ const [useDesignTokenProvider, useDesignTokenInject] = createInjectionState(
   }
 )
 
+export const DesignTokenProviderContext = defineComponent({
+  props: {
+    token: objectType<AliasToken>(),
+    theme: objectType<Theme<SeedToken, MapToken>>(),
+    components: objectType<OverrideToken>(),
+    hashed: someType<string | boolean>([String, Boolean])
+  },
+  setup(props, { slots }) {
+    useDesignTokenProvider(props)
+    return () => {
+      return slots.default?.()
+    }
+  }
+})
+
 export { useDesignTokenProvider }
 export const useDesignTokenState = () => useDesignTokenInject() ?? defaultConfig
 
@@ -109,7 +124,10 @@ export function useToken(): [
   ]
 }
 
-export type UseComponentStyleResult = [(node: VNodeChild) => VNodeChild, string]
+export type UseComponentStyleResult = [
+  (node: VNodeChild) => VNodeChild,
+  ComputedRef<string>
+]
 
 export type GenerateStyle<
   ComponentToken extends object = AliasToken,

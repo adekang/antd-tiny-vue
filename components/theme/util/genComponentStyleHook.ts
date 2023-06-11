@@ -115,7 +115,7 @@ export default function genComponentStyleHook<
           styleInterpolation
         ]
       }),
-      hashId.value
+      hashId
     ]
   }
 }

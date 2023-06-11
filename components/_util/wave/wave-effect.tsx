@@ -16,11 +16,9 @@ import {
   useState
 } from '@v-c/utils'
 import { getTargetWaveColor } from './util'
-
 function validateNum(value: number) {
   return Number.isNaN(value) ? 0 : value
 }
-
 export const WaveEffect = defineComponent({
   name: 'WaveEffect',
   props: {
@@ -52,7 +50,6 @@ export const WaveEffect = defineComponent({
       }
       return style
     })
-
     function syncPos() {
       const { target } = props
       const nodeStyle = getComputedStyle(target)
@@ -90,7 +87,6 @@ export const WaveEffect = defineComponent({
         ].map((radius) => validateNum(parseFloat(radius)))
       )
     }
-
     onMounted(async () => {
       syncPos()
       setEnabled(true)
