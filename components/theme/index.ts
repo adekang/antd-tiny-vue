@@ -1,38 +1,31 @@
-import { createTheme, useCacheToken } from '@antd-tiny-vue/cssinjs'
-import { computed } from 'vue'
+/* eslint-disable import/prefer-default-export */
+import { defaultConfig, useToken as useInternalToken } from './internal'
+import type { GlobalToken } from './interface'
+import defaultAlgorithm from './themes/default'
+import darkAlgorithm from './themes/dark'
+import compactAlgorithm from './themes/compact'
 
-export interface ThemeToken {
-  primaryColor: string
-  primaryColorHover: string
+// ZombieJ: We export as object to user but array in internal.
+// This is used to minimize the bundle size for antd package but safe to refactor as object also.
+// Please do not export internal `useToken` directly to avoid something export unexpected.
+/** Get current context Design Token. Will be different if you are using nest theme config. */
+function useToken() {
+  const [theme, token, hashId] = useInternalToken()
+
+  return { theme, token, hashId }
 }
 
-export const defaultTheme: ThemeToken = {
-  primaryColor: '#1890ff',
-  primaryColorHover: '#40a9ff'
-}
+export { type GlobalToken }
 
-function derivative(theme: ThemeToken) {
-  return {
-    ...theme
-  }
-}
+export default {
+  /** @private Test Usage. Do not use in production. */
+  defaultConfig,
 
-const theme = createTheme(derivative)
+  /** Default seedToken */
+  defaultSeed: defaultConfig.token,
 
-export const useToken = () => {
-  const mergeTheme = computed(() => theme)
-
-  const cacheToken = useCacheToken(
-    mergeTheme,
-    computed(() => [defaultTheme]),
-    computed(() => ({
-      salt: 'true'
-    }))
-  )
-
-  return [
-    mergeTheme,
-    computed(() => cacheToken.value[0]),
-    computed(() => cacheToken.value[1])
-  ]
+  useToken,
+  defaultAlgorithm,
+  darkAlgorithm,
+  compactAlgorithm
 }

@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "@antd-tiny-vue/cssinjs": "^0.0.10",
+    "@v-c/utils": "^0.0.24",
+    "@vueuse/core": "^10.1.2",
     "vue": "^3.3.4"
   }
 }
