@@ -117,11 +117,9 @@ export function registerTheme(globalPrefixCls: string, theme: Theme) {
   if (canUseDom()) {
     updateCSS(style, `${dynamicStyleMark}-dynamic-theme`)
   } else {
-    // @ts-expect-error this is ssr
     warning(
       false,
-      'ConfigProvider',
-      'SSR do not support dynamic theme with css variables.'
+      'ConfigProvider SSR do not support dynamic theme with css variables.'
     )
   }
 }
