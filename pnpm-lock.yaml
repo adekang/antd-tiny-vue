@@ -1,9 +1,15 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@ant-design/colors':
+    specifier: ^7.0.0
+    version: 7.0.0
   '@antd-tiny-vue/cssinjs':
     specifier: ^0.0.10
     version: 0.0.10(vue@3.3.4)
+  '@ctrl/tinycolor':
+    specifier: ^3.6.0
+    version: 3.6.0
   '@v-c/utils':
     specifier: ^0.0.24
     version: 0.0.24
@@ -204,6 +210,12 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@ant-design/colors@7.0.0:
+    resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
+    dependencies:
+      '@ctrl/tinycolor': 3.6.0
+    dev: false
 
   /@antd-tiny-vue/cssinjs@0.0.10(vue@3.3.4):
     resolution: {integrity: sha512-Htd2SbbXJpbx7Z6wqXtPCyblZyZFzSM59NuYsV4mZuJti+NzidAlhB+zJl2N5qxHaScKSRFfTf8WugMNYNd7OA==}
@@ -684,6 +696,11 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@ctrl/tinycolor@3.6.0:
+    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
+    engines: {node: '>=10'}
+    dev: false
 
   /@docsearch/css@3.5.0:
     resolution: {integrity: sha512-Ob5FQLubplcBNihAVtriR59FRBeP8u69F6mu4L4yIr60KfsPc10bOV0DoPErJw0zF9IBN2cNLW9qdmt8zWPxyg==}
